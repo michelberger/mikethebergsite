@@ -1,0 +1,206 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"Segoe UI";
+	color: white;
+}
+a{
+	text-decoration:none;
+	font-style: italic;
+	color:#CCCCCC;
+}
+a:hover{
+	color:#AAAAAA;
+}
+a:active{
+	color:#000000;
+}
+header,
+section,
+footer,
+aside,
+nav,
+article{
+	display:block;
+}
+i{ /* Font-Awesome elements */
+	color:white;
+	padding-left:10px;
+	padding-right:10px;
+}
+ul{
+	list-style:none;
+}
+h1{
+	text-align:center;
+	font-size:25px;
+	padding-bottom:10px;
+}
+h2{
+	text-align: center;
+	font-size:15px;
+	padding-bottom:10px;
+}
+h3{
+	font-size:20px;
+	color: white;
+	text-decoration:underline;
+}
+body{
+	background-image: url("../img/webwallpaper_1.jpg");
+	background-attachment: fixed;
+	background-size: 100% auto;
+	overflow-y: scroll;
+}
+article{
+	padding:20px;
+	margin-bottom:15px;
+	background:rgb(187, 187, 187);
+	background:rgba(187, 187, 187, 0.3);
+	background:radial-gradient(rgba(187, 187, 187, 0.3) 55%, rgba(187, 187, 187, 0.0));
+}
+article footer{
+	font-size: 10px;
+	text-align: right;
+}
+p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight:normal;
+}
+table{
+	border: 1px dashed white;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	table-layout: fixed;
+	font-weight: normal;
+}
+thead{
+	font-weight: bold;
+	text-align: center;
+}
+#top-menu{
+	text-align:center;
+	background:rgb(100, 100, 100);
+	background:rgba(100, 100, 100, 0.5);
+	/* Animation pushes everything else */
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: slidein;
+	-moz-animation-duration: 1s;
+	-moz-animation-name: slidein;
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+#top-menu li{
+	display:inline-block;
+	padding:5px;
+	font:bold 14px Tahoma;
+	font-weight:bold;
+}
+#big-wrapper{
+	text-align:left;
+	font-weight:bold;
+	width:80%;
+	margin:20px auto;
+	background-color:rgb(187, 187, 187);
+	background-color:rgba(187, 187, 187, 0.3);
+	background:radial-gradient(rgba(187, 187, 187, 0.3) 55%, rgba(187, 187, 187, 0.0));
+	/* Animation fades everything */
+	-webkit-animation-duration: 2s;
+	-webkit-animation-name: fadein;
+	-moz-animation-duration: 2s;
+	-moz-animation-name: fadein;
+	animation-duration: 2s;
+	animation-name: fadein;
+}
+#main-section{
+	float:left;
+	width:95%;
+	margin:2.5%;
+}
+#portrait{
+	padding:10px;
+	float:left;
+	width:100px;
+	height:100px;
+	border-radius:100px;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-name: fadein;
+	-moz-animation-duration: 5s;
+	-moz-animation-name: fadein;
+	animation-duration: 5s;
+	animation-name: fadein;
+}
+#project-list li{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+#main-footer{
+	clear:both;
+	text-align:center;
+	font-size:12px;
+	padding:20px;	
+	border-top:1px solid grey;
+}
+.normal-list{
+	list-style-type: disc;
+	padding-left: 45px;
+	font-weight: normal;
+}
+.article-contents{
+	overflow:hidden;
+}
+.quoted-text{
+	font-style:italic;
+}
+
+/* Animations */
+@-webkit-keyframes slidein {
+	from {
+		margin-top: -100%;
+		margin-bottom: -100%;
+	} to {
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+}
+@-moz-keyframes slidein {
+	from {
+		margin-top: -100%;
+		margin-bottom: -100%;
+	} to {
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+}
+@keyframes slidein {
+	from {
+		margin-top: -100%;
+		margin-bottom: -100%;
+	} to {
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+}
+@-webkit-keyframes fadein {
+	from{
+		opacity: 0;
+	} to{
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein {
+	from{
+		opacity: 0;
+	} to{
+		opacity: 1;
+	}
+}
+@keyframes fadein {
+	from{
+		opacity: 0;
+	} to{
+		opacity: 1;
+	}
+}
