@@ -1,0 +1,40 @@
+h1{
+	font-size: 30px;
+}
+h2{
+	padding-bottom: 5px;
+	font-size: 25px;
+}
+h2 span{
+	font-size: 30px;
+	font-style: italic;
+}
+h3{
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+#big-wrapper{
+	text-align: justify;
+}
+#intro-body{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#skills{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#interests{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#contact{
+	text-decoration: none;
+	text-align: center;
+}
+#reference-list li{
+	display:inline-block;
+	padding:5px;
+	font:bold 14px Tahoma;
+}
