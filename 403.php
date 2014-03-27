@@ -26,7 +26,7 @@
 		<nav id="top-menu">
 			<ul>
 				<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-				<li><a href="/projects.html"><i class="fa fa-tasks"></i>Projects</a></li>
+				<li><a href="/projects"><i class="fa fa-tasks"></i>Projects</a></li>
 				<li>
 					<!-- Hide email from web bots -->
 					<script type="text/javascript">

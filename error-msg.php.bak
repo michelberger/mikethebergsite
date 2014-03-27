@@ -1,0 +1,47 @@
+<?php
+
+$redirect = $_SERVER['REDIRECT_STATUS'];
+echo $redirect;
+if ($redirect == 200 && $_GET['action']) {
+	$tmp_action = basename($_GET['action']);
+	echo $tmp_action;
+}
+
+$page_title = $redirect.' - Turn Back - Michel Bergeron';
+$page_keys  = $redirect.', error';
+$page_desc  = 'An error has ocurred. Please go back.';
+
+?>
+
+<section id="main-section">
+	<article>
+		<h1><i class="fa fa-arrow-left fa-5x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-up fa-5x"></i></h1>
+		<h1>:(</h1>
+		<h1>
+		<?php
+		switch($redirect){
+			case 400:
+				echo 'Sorry, the request made was not defined properly.';
+			break;
+			case 401:
+				echo 'You are not authorized to access this page.';
+			break;
+			case 403:
+				echo 'You do not have permission to access this page.';
+			break;
+			case 404:
+				echo 'The page you\'re looking for doesn\'t seem to exist.';
+			break;
+			case 500:
+				echo 'An internal server error has occured. Please try again later.';
+			break;
+			default:
+				echo 'An unknown error has occured. Please try again later.';
+			break;
+		}
+		?>
+		</h1>
+		<br><br>
+		<p>Go back, or click one of the navigation buttons above to find your way</p>
+	</article>
+</section>

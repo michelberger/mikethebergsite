@@ -1,0 +1,17 @@
+Options -Indexes
+ErrorDocument 403 /?action=403
+ErrorDocument 404 /?action=404
+
+RewriteEngine On
+# Any reference to old links are still safe!
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteRule ^(.*).html$ $1 [NC,L]
+
+# Simple passthru for existing files (so we can still get to files that exist!)
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+# Rewrite anything to index.php?action=anything (http://site/test -> http://site/index.php?action=test)
+RewriteRule ^(.*)$ index.php/?action=$1
